@@ -78,7 +78,7 @@
 #define MICROPY_PY_NETWORK_INCLUDEFILE "ports/esp8266/modnetwork.h"
 #define MICROPY_PY_NETWORK_MODULE_GLOBALS_INCLUDEFILE "ports/esp8266/modnetwork_globals.h"
 #define MICROPY_PY_WEBSOCKET        (1)
-#define MICROPY_PY_ONEWIRE          (1)
+#define MICROPY_PY_ONEWIRE          (0)
 #define MICROPY_PY_WEBREPL          (1)
 #define MICROPY_PY_WEBREPL_DELAY    (20)
 #define MICROPY_PY_WEBREPL_STATIC_FILEBUF (1)
@@ -101,7 +101,7 @@
 #define MICROPY_FATFS_RPATH            (2)
 #define MICROPY_FATFS_MAX_SS           (4096)
 #define MICROPY_FATFS_LFN_CODE_PAGE    437 /* 1=SFN/ANSI 437=LFN/U.S.(OEM) */
-#define MICROPY_ESP8266_APA102         (1)
+#define MICROPY_ESP8266_APA102         (0)
 
 #define MICROPY_EVENT_POLL_HOOK {ets_event_poll();}
 #define MICROPY_VM_HOOK_COUNT (10)
