@@ -1,14 +1,5 @@
 import os
-import network
 from flashbdev import bdev
-
-
-def wifi():
-    import binascii
-
-    ap_if = network.WLAN(network.AP_IF)
-    ssid = b"MicroPython-%s" % binascii.hexlify(ap_if.config("mac")[-3:])
-    ap_if.config(ssid=ssid, security=network.AUTH_WPA_WPA2_PSK, key=b"micropythoN")
 
 
 def check_bootsec():
@@ -47,22 +38,20 @@ reprogram MicroPython.
 def setup():
     check_bootsec()
     print("Performing initial setup")
-    wifi()
     os.VfsLfs2.mkfs(bdev)
     vfs = os.VfsLfs2(bdev)
     os.mount(vfs, "/")
-    with open("boot.py", "w") as f:
+    with open("main.py", "w") as f:
         f.write(
             """\
-# This file is executed on every boot (including wake-boot from deepsleep)
-#import esp
-#esp.osdebug(None)
-import os, machine
-#os.dupterm(None, 1) # disable REPL on UART(0)
-import gc
-#import webrepl
-#webrepl.start()
-gc.collect()
+import uasyncio as asyncio
+import fildz_cyberos as cyberos
+
+async def main():
+    await cyberos.init()
+    await cyberos.run_forever()
+    
+asyncio.run(main())
 """
         )
     return vfs
