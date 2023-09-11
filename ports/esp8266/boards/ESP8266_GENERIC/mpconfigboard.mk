@@ -2,7 +2,7 @@ ifeq ($(BOARD_VARIANT),)
 LD_FILES = boards/esp8266_2MiB.ld
 
 MICROPY_ESPNOW ?= 1
-MICROPY_PY_BTREE ?= 1
+MICROPY_PY_BTREE ?= 0
 MICROPY_VFS_FAT ?= 1
 MICROPY_VFS_LFS2 ?= 1
 
@@ -17,7 +17,7 @@ ifeq ($(BOARD_VARIANT),FLASH_1M)
 LD_FILES = boards/esp8266_1MiB.ld
 
 MICROPY_ESPNOW ?= 1
-MICROPY_PY_BTREE ?= 1
+MICROPY_PY_BTREE ?= 0
 MICROPY_VFS_LFS2 ?= 1
 
 # Note: Implicitly uses the port manifest.
@@ -30,7 +30,7 @@ ifeq ($(BOARD_VARIANT),OTA)
 LD_FILES = boards/esp8266_ota.ld
 
 MICROPY_ESPNOW ?= 1
-MICROPY_PY_BTREE ?= 1
+MICROPY_PY_BTREE ?= 0
 MICROPY_VFS_LFS2 ?= 1
 
 # Note: Implicitly uses the port manifest.
