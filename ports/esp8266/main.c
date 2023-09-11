@@ -49,7 +49,7 @@
 #include "modespnow.h"
 #endif
 
-STATIC char heap[38 * 1024];
+STATIC char heap[44 * 1024];
 
 STATIC void mp_reset(void) {
     mp_stack_set_top((void *)0x40000000);
