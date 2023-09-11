@@ -56,3 +56,21 @@
 [submodule "lib/micropython-lib"]
 	path = lib/micropython-lib
 	url = https://github.com/micropython/micropython-lib.git
+[submodule "ports/esp8266/modules/fildz_cyberware"]
+	path = ports/esp8266/modules/fildz_cyberware
+	url = https://github.com/fildz-official/FILDZ_CYBERWARE.git
+[submodule "ports/esp8266/modules/fildz_button"]
+	path = ports/esp8266/modules/fildz_button
+	url = https://github.com/fildz-official/FILDZ_CYBEROS_Button.git
+[submodule "ports/esp8266/modules/fildz_button_api"]
+	path = ports/esp8266/modules/fildz_button_api
+	url = https://github.com/fildz-official/FILDZ_CYBEROS_Button_API.git
+[submodule "ports/esp8266/modules/fildz_neopixel"]
+	path = ports/esp8266/modules/fildz_neopixel
+	url = https://github.com/fildz-official/FILDZ_CYBEROS_NeoPixel.git
+[submodule "ports/esp8266/modules/fildz_buzzer"]
+	path = ports/esp8266/modules/fildz_buzzer
+	url = https://github.com/fildz-official/FILDZ_CYBEROS_Buzzer.git
+[submodule "ports/esp8266/modules/fildz_cyberos"]
+	path = ports/esp8266/modules/fildz_cyberos
+	url = https://github.com/fildz-official/FILDZ_CYBEROS.git
