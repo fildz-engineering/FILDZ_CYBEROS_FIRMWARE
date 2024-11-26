@@ -1,6 +1,6 @@
 # FILDZ CYBEROS Firmware
 
-This repository hosts [CYBEROS](https://github.com/fildz-official/FILDZ_CYBEROS) firmwares for the variety of CYBERWARES. Each CYBERWARE comes with its unique features and senors thus to get the best performance, unique firmware is provided. 
+This repository hosts [CYBEROS](https://github.com/fildz-engineering/FILDZ_CYBEROS) firmwares for the variety of CYBERWARES. Each CYBERWARE comes with its unique features and senors thus to get the best performance, unique firmware is provided. 
 
 Currenly, Espressif ESP8266/ESP8285 MCUs are supported.
 
